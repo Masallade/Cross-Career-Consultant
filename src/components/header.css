@@ -1,0 +1,21 @@
+/* src/components/Header.css */
+.header-top ul {
+    margin: 10;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .header-top ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .header-top .list-inline-item a {
+    color: rgb(99, 12, 12);
+    margin-right: 10px;
+  }
+  
+  .header-top .navbar-brand {
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,27 @@
+@import '../../../resources/color_manager.css';
+
+.background-design {
+    background-color: var(--primaryAmber);
+    border-radius: 80% 60% 100% 30%;
+    height: 70%;
+    width: 35%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    overflow: hidden; /* Ensures the content doesn't exceed the parent container */
+}
+
+.image {
+    position: relative;
+    height: 100%; /* Take the full height of the parent */
+    width: 100%;  /* Take the full width of the parent */
+}
+
+.image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  /* Ensures the image covers the entire container */
+}

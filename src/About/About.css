@@ -1,0 +1,106 @@
+@import '../resources/color_manager.css';
+
+
+
+
+
+.about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about .about-heading{
+    margin-top: 8%;
+    padding-bottom: 20px;
+    color: var(--primaryAmber);
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about p{
+    color: var(--textColor);
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.our-purpose{
+    padding-top: 10vh;
+    height: 90vh;
+    width: 100vw;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+
+.our-purpose-animation-container{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 25%;
+}
+
+.our-vision{
+    padding-top: 10vh;
+    height: 90vh;
+    width: 100vw;
+    background-color: var(--background);   
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+
+
+.our-vision-animation-container{
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 25%;
+}
+
+
+
+
+
+
+.our-clients{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+}
+.our-clients-animation-container{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 25%;
+}
+.our-clients-data{
+    padding: 20px;
+    border-radius: 20% 0 0 20% ;
+    z-index: 1;
+}
+
+
+.our-clients-data::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background2);
+    border-radius: 20% 0 0 20% ;
+
+    filter: blur(20px);
+    z-index: -1;
+
+}
+

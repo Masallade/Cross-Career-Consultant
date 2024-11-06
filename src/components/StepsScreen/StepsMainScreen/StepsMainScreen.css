@@ -1,0 +1,28 @@
+@import '../../../resources/color_manager.css';
+.main-div{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+
+}
+.main-div-h1{
+    color: var(--white);
+    font-weight: 700;
+}
+
+.top-3{
+    width: 100%;
+    padding: 2vh 2vh 2vh 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bottom-3{
+    width: 100%;
+    padding: 2vh 2vh 2vh 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

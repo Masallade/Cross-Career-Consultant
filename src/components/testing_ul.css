@@ -1,0 +1,33 @@
+ul.no-bullets{
+    list-style-type: none;
+    padding: 0%;
+}
+
+ol.no-numbers{
+    list-style-type: none;
+    padding: 0%;
+}
+
+div.div-css{
+    color: #bccf10;
+    background-color: aqua;
+}
+
+
+div.testing-2{
+    background-color: green;
+    color:red;
+}
+
+
+.horizontal-list {
+    display: flex;
+    gap: 20px; /* Add spacing between items if needed */
+    justify-content: flex-start; /* Aligns items horizontally */
+  }
+  
+  /* Optional: Center the icons and text vertically */
+  .horizontal-list li {
+    display: flex;
+    align-items: center;
+  }

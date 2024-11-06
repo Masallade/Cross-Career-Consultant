@@ -1,0 +1,104 @@
+/* Container for the card */
+@import '../../../resources/color_manager.css';
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px 5px var(--black);
+    width: 25vw;
+    height: 40vh;
+    color: var(--textColor);
+    position: relative;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.card-container:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 8px 8px 15px 5px rgba(0, 0, 0, 0.3); /* Add a larger shadow on hover */
+    background-color: var(--primaryAmber); /* Change background color on hover */
+}
+
+.discipline-data {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discipline-icon {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 100%;
+    background-color: var(--blue);
+    height: 15vh;
+    width: 7.5vw;
+    align-items: center;
+}
+
+.card-container:hover .discipline-icon {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 100%;
+    background-color: var(--white);
+    height: 15vh;
+    width: 7.5vw;
+    align-items: center;
+}
+
+
+
+.dis-icon {
+    padding-left: 1vw;
+    padding-bottom: 2vh;
+    color: var(--primaryAmber);
+    height: 7vh;
+}
+
+.card-container:hover .dis-icon {
+    padding-left: 1vw;
+    padding-bottom: 2vh;
+    color: var(--blue);
+    height: 7vh;
+}
+
+.discipline-name {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: var(--blue);
+}
+
+.card-container:hover .discipline-name p{
+    font-size: 5vh;
+    font-family: Poppins;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.discipline-name p {
+    font-size: 5vh;
+    font-family: Poppins;
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.discipline-detail {
+    padding: 0 20px 40px 10px;
+    color: var(--textColor);
+    font-size: 3vh;
+}
+
+.card-container:hover .discipline-detail {
+    padding: 0 20px 40px 10px;
+    color: var(--white);
+    font-size: 3vh;
+}

@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.app-main-div{
+  overflow: hidden;
+}
+
+ 
+@keyframes slideIn {
+  0% {
+      transform: translateY(100%); /* Start from bottom */
+      opacity: 0; /* Start transparent */
+  }
+  100% {
+      transform: translateY(0); /* End at original position */
+      opacity: 1; /* Fully visible */
+  }
+}
+
+
+/* global.css */
+
+.right-side-box{
+  @apply 2xl:mr-16 xl:mr-12 lg:mr-8 mr-4 
+}
+
+.left-side-box{
+  @apply 2xl:ml-16 xl:ml-12 lg:ml-8 ml-4 
+}
+
+.box {
+  @apply   
+           sm:h-[50%] xxs:h-[60%] xxxxs:h-[50%] h-[20%] w-[50%]
+           sm:rounded-[12px] rounded-[10px]
+           flex flex-col justify-start items-center relative bg-black overflow-hidden pl-2
+
+          /* this is the heading text style */
+
+           2xl:text-[4.25rem] xl:text-[3.5rem] lg:text-[3rem] md:text-[2.7rem] sm:text-[2.5rem] xs:text-[1.5rem] xxs:text-[1rem] xxxs:text-[0.8rem]
+           text-primaryAmber
+           ;
+}
+
+
+.box-paragraph{
+  @apply 2xl:text-[2.5rem] xl:text-[1.2rem] lg:text-[1.1rem] md:text-[0.8rem] sm:text-[0.9rem] xs:text-[0.8rem] xxs:text-[0.7rem] xxxs:text-[0.6rem] text-[0.5rem]
+  w-full max-w-[60ch]
+ text-textColor relative m-2
+}
+
+.box-bottom-image{
+  @apply xl:h-[270px] lg:h-[230px] md:h-[160px] sm:h-[150px]  xs:h-[120px] xxs:h-[70px] xxxs:h-[60px] xxxxs:h-[50px]
+  absolute bottom-0 left-0 w-full overflow-hidden flex flex-row
+}
+
+
+.image-side-box{
+@apply  xxxs:h-[60%] 
+        rounded-lg object-contain 
+}
+
+
+
+.immigration-areas-flags{
+    @apply   
+             sm:h-[50%] xxs:h-[60%] xxxxs:h-[50%] 
+             sm:rounded-[12px] rounded-[10px]
+             flex flex-col justify-between items-center relative  overflow-hidden pl-2
+  
+            /* this is the heading text style */
+  
+             2xl:text-[3.5rem] xl:text-[3rem] lg:text-[2.5rem] md:text-[2rem] sm:text-[1.5rem] xs:text-[1.2rem] xxs:text-[8rem] xxxs:text-[0.5rem]
+             text-primaryAmber
+             ;
+}
+
+
+.text-responsive{
+  @apply 2xl:text-[2.5rem] xl:text-[1.2rem] lg:text-[1.1rem] md:text-[1rem] sm:text-[0.9rem] xs:text-[0.8rem] xxs:text-[0.7rem] xxxs:text-[0.5rem] text-[0.25rem] xxxxs:text-[0.35rem]
+ 
+}
+
+
+.navbar-text-responsive{
+  @apply 2xl:text-[2rem] xl:text-[1rem] lg:text-[1rem] md:text-[0.9rem] sm:text-[0.7rem] xs:text-[0.6rem] xxs:text-[0.4rem] xxxs:text-[0.3rem] text-[0.25rem] xxxxs:text-[0.25rem]
+ 
+}
+
+.menu-para-responsive{
+  @apply 2xl:text-[1.5rem] xl:text-[0.8rem] lg:text-[0.75rem] md:text-[0.6rem] sm:text-[0.5rem] xs:text-[0.45rem] xxs:text-[0.3rem] xxxs:text-[0.25rem]  xxxxs:text-[0.2rem]
+ 
+}
+
+.menu-heading-responsive{
+  @apply 2xl:text-[1.5rem] xl:text-[1.1rem] lg:text-[1rem] md:text-[0.9rem] sm:text-[0.75rem] xs:text-[0.65rem] xxs:text-[0.5rem] xxxs:text-[0.45rem]  xxxxs:text-[0.3rem]
+ 
+}
+
+.para-responsive{
+  @apply 2xl:text-[2rem] xl:text-[1rem] lg:text-[1rem] md:text-[0.7rem] sm:text-[0.6rem] xs:text-[0.5rem] xxs:text-[0.4rem] xxxs:text-[0.35rem]  xxxxs:text-[0.3rem]
+ 
+}
+
+.icon-responsive{
+  @apply 2xl:h-[6rem] xl:h-[5rem] lg:h-[4rem] md:h-[3rem] sm:h-[2.5rem] xs:h-[1.8rem] xxs:h-[1.4rem] xxxs:h-[1.1rem] h-[0.7rem] text-primaryAmber
+
+}
+
+.footer-heading-responsive{
+  @apply  2xl:text-[2.2rem] xl:text-[1.9rem] lg:text-[1.5rem] md:text-[1.2rem] sm:text-[1rem] xs:text-[0.8rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] xxxxs:text-[0.3rem]
+             text-primaryAmber
+             ;
+  }
+
+.heading-responsive{
+@apply  2xl:text-[4.25rem] xl:text-[3.5rem] lg:text-[3rem] md:text-[2.7rem] sm:text-[2.5rem] xs:text-[2rem] xxs:text-[1.5rem] xxxs:text-[1rem] xxxxs:text-[0.8rem]
+           text-primaryAmber
+           ;
+}
+
+
+/* Dropdown delay for smoother hover effect */
+/* App.css */
+
+/* Dropdown delay for smoother hover effect */
+/* Delayed dropdown appearance */
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+.group-hover\:block {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 0.2s; /* Adjust the delay here */
+}
+
+.group:hover .group-hover\:block {
+  opacity: 1;
+}
